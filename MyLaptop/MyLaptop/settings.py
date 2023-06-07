@@ -75,9 +75,14 @@ WSGI_APPLICATION = 'MyLaptop.wsgi.application'
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+      'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'MYCardb', 
+        'USER': 'postgres',
+        'PASSWORD': 'udemyH123',
+        'HOST': 'localhost' ,  
+        "PORT": "5432"
+        
     }
 }
 
@@ -119,3 +124,13 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT=os.path.join(BASE_DIR, "static")
+STATICFILES_DIRS= [ 
+    os.path.join(BASE_DIR, "MyLaptop/static"), 
+]
+
+
+
+#Media Settings 
+MEDIA_ROOT=  os.path.join(BASE_DIR, "media")
+MEDIA_URL='/media/'
