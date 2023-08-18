@@ -1,0 +1,31 @@
+#header{ 
+    background-color:green;
+   color: rgb(255, 247, 0);
+    font-weight: bold 10px;
+    font-size: 10px;
+
+    box-shadow: 0px 0px 10px 0px #eaff00;
+}
+
+#header a:link, #header a:visited {  
+    color: black;
+}
+
+div.breadcrumbs{ 
+    background-color: black;
+    box-shadow: 0px 0px 10px 0px #ed2b09;
+}
+
+.module h2, .module caption, .inline-group h2{ 
+
+background-color: green;
+
+}
+
+.button, input[type=submit], input[type=button], .submit-row input, a.button { 
+    background-color: rgb(218, 20, 10);
+}
+
+.submit-row input.default {
+    background-color: green;
+}
